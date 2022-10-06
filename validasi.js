@@ -1,11 +1,15 @@
 function logika(input) {
-	for (input = input)
-	if(input == 15) {
-		return "FizzBuzz"
-	} else if (input == 3) {
-		return "Fizz"
-	} else if (input == 5) {
-		return "Buzz"
+	for (let num = input; num <= 100; num++) {
+		if(num % 15 == 0) {
+			console.log("FizzBuzz")
+		} else if (num % 3 == 0) {
+			console.log("Fizz")
+		} else if (num % 5 == 0) {
+			console.log("Buzz")
+		}	else	{
+			console.log(num)
+		}
 	}
 }
+logika(50);
 
